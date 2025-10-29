@@ -40,12 +40,10 @@ li a:hover {
 
 header {
     text-align: center;
-    background-color: #8803BA;
     width: 100%;
-    background: url(../imagenes/fondo.jpg);
     background-size: 100%;
     background-position: center;
-    height: 10em;
+    height: 5em;
     margin-top: 20px;
 }
 
@@ -103,6 +101,34 @@ a:hover {
     color: #D84315;
 }
 
+/* Filtros de categorías */
+.filtros-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px auto;
+    
+}
+
+.filtro-btn {
+    background-color: #fff;
+    color: #8803BA;
+    border: 2px solid #8803BA;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s;
+}
+
+.filtro-btn:hover {
+    background-color: #f0f0f0;
+}
+
+.filtro-btn.active {
+    background-color: #8803BA;
+    color: #fff;
+}
 
 /* Grid layout para el listado de comidas */
 #comidas-list {

@@ -2,6 +2,41 @@
 // Empiezo con un array para almacenar los productos del carrito
 let carrito = [];
 
+// Filtrado por categorías
+function inicializarFiltros() {
+    const botonesFiltro = document.querySelectorAll('.filtro-btn');
+    
+    botonesFiltro.forEach(boton => {
+        boton.addEventListener('click', function() {
+            const categoria = this.getAttribute('data-categoria');
+            
+            // Actualizar botón activo
+            botonesFiltro.forEach(btn => btn.classList.remove('active'));
+            this.classList.add('active');
+            
+            // Filtrar productos
+            filtrarPorCategoria(categoria);
+        });
+    });
+}
+
+function filtrarPorCategoria(categoria) {
+    const productos = document.querySelectorAll('.comida');
+    
+    productos.forEach(producto => {
+        if (categoria === 'todas') {
+            producto.style.display = 'flex';
+        } else {
+            const categoriaProducto = producto.getAttribute('data-categoria');
+            if (categoriaProducto === categoria) {
+                producto.style.display = 'flex';
+            } else {
+                producto.style.display = 'none';
+            }
+        }
+    });
+}
+
 function inicializarCarrito() {
     // Cargar carrito desde localStorage si existe
     const carritoGuardado = localStorage.getItem('carrito');
@@ -14,6 +49,11 @@ function inicializarCarrito() {
     botonesAgregar.forEach(boton => {
         boton.addEventListener('click', agregarAlCarrito);
     });
+    
+    // Inicializar filtros si estamos en la página principal
+    if (document.querySelector('.filtros-container')) {
+        inicializarFiltros();
+    }
 }
 
 function agregarAlCarrito(event) {
@@ -162,7 +202,15 @@ function obtenerPrecio(nombre) {
     const precios = {
         'Hamburguesa': 8.50,
         'Pizza Muzzarella': 12.00,
-        'Ensalada César': 7.50
+        'Ensalada César': 7.50,
+        'Asado': 15.00,
+        'Helado': 6.00,
+        'Hamburguesa Bacon': 9.50,
+        'Pizza Napolitana': 13.00,
+        'Helado al peso': 5.00,
+        'Helado palito': 3.00,
+        'Ensalada Griega': 8.00,
+        'Ensalada Caprese': 8.50
     };
     return precios[nombre] || 10.00;
 }
