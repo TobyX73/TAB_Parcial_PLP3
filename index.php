@@ -16,26 +16,38 @@
             
             <div class="comida">
                 <h2>Hamburguesa</h2>
-                <p>Contiene tomate, lechuga, carne, huevo y cebolla</p>
                 <p><img src="https://picsum.photos/id/237/100/100" alt = hamburguesa width="100%"></p>
+                <p>Contiene tomate, lechuga, carne, huevo y cebolla</p>
                 <button class="Agregar">Agregar al Carrito</button>
             </div>
             <div class="comida">
                 <h2>Pizza Muzzarella</h2>
-                <p>Contiene muzarella, oregano y salsa de tomate</p>
                 <p><img src="https://picsum.photos/id/237/100/100" alt = pizza width="100%"></p>
+                <p>Contiene muzarella, oregano y salsa de tomate</p>
                 <button class="Agregar">Agregar al Carrito</button>
             </div>
             <div class="comida">
                 <h2>Ensalada César</h2>
-                <p>Contiene lechuga, pollo, croutones y salsa césar</p>
                 <p><img src="https://picsum.photos/id/237/100/100" alt= ensaladawidth="100%"></p>
+                <p>Contiene lechuga, pollo, croutones y salsa césar</p>
+                <button class="Agregar">Agregar al Carrito</button>
+            </div>
+            <div class="comida">
+                <h2>Helado</h2>
+                <p><img src="https://picsum.photos/id/237/100/100" alt= ensaladawidth="100%"></p>
+                <p>Contiene vainilla, chocolate y frutilla</p>
+                <button class="Agregar">Agregar al Carrito</button>
+            </div>
+            <div class="comida">
+                <h2>Asado</h2>
+                <p><img src="https://picsum.photos/id/237/100/100" alt= ensaladawidth="100%"></p>
+                <p>Contiene Vacio, chorizo, morcilla</p>
                 <button class="Agregar">Agregar al Carrito</button>
             </div>
 
         
         </section>
     </main>
-    <script src="js/TAB_script.js"></script>
+    <script src="js/TAB_scripts.js"></script>
 </body>
 </html>
