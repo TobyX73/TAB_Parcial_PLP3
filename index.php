@@ -6,9 +6,9 @@
     <link rel="stylesheet" href="css/TAB_estilos.css">
 </head>
 <body>
-    <?php include 'include/navbar.php'; ?>
+    <?php include 'includes/TAB_navbar.php'; ?>
     <header>
-        <h1>Concurso de disfraces de Halloween</h1>
+        <h1>Menu de comida Rapida</h1>
     </header>
     <main>
         <section id="comidas-list" class="section">
@@ -17,25 +17,22 @@
             <div class="comida">
                 <h2>Hamburguesa</h2>
                 <p>Contiene tomate, lechuga, carne, huevo y cebolla</p>
-                <p><img src="imagenes/fondo.jpg" width="100%"></p>
+                <p><img src="https://picsum.photos/id/237/100/100" alt = hamburguesa width="100%"></p>
                 <button class="Agregar">Agregar al Carrito</button>
             </div>
-            <hr>
             <div class="comida">
-                <h2>Pizza muzzarella</h2>
+                <h2>Pizza Muzzarella</h2>
                 <p>Contiene muzarella, oregano y salsa de tomate</p>
-                <p><img src="imagenes/fondo.jpg" width="100%"></p>
+                <p><img src="https://picsum.photos/id/237/100/100" alt = pizza width="100%"></p>
                 <button class="Agregar">Agregar al Carrito</button>
             </div>
-            <hr>
             <div class="comida">
                 <h2>Ensalada César</h2>
                 <p>Contiene lechuga, pollo, croutones y salsa césar</p>
-                <p><img src="imagenes/fondo.jpg" width="100%"></p>
+                <p><img src="https://picsum.photos/id/237/100/100" alt= ensaladawidth="100%"></p>
                 <button class="Agregar">Agregar al Carrito</button>
             </div>
-            <hr>
-            
+
         
         </section>
     </main>
