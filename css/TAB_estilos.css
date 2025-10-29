@@ -186,7 +186,7 @@ a:hover {
 }
 
 .comida .Agregar {
-    margin-top: auto; /* empuja el botón al final de la tarjeta */
+    margin-top: auto; 
     width: auto;
     align-self: center;
     padding: 8px 14px;
@@ -198,7 +198,6 @@ a:hover {
     .comida { padding: 10px; }
 }
 
-/* Estilos para el contador del carrito en navbar */
 .badge-carrito {
     background-color: #FF5722;
     color: #fff;
@@ -443,5 +442,341 @@ a:hover {
     
     .cantidad-control {
         justify-content: center;
+    }
+}
+
+@media (max-width: 1024px) {
+    header {
+        height: 8em;
+    }
+    
+    header h1 {
+        font-size: 1.8rem;
+    }
+    
+    #comidas-list {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 15px;
+        width: calc(100% - 30px);
+        padding: 10px;
+    }
+    
+    .carrito-container {
+        padding: 15px;
+        width: calc(100% - 30px);
+    }
+}
+
+@media (max-width: 768px) {
+    nav {
+        padding: 2% 0;
+    }
+    
+    li {
+        margin: 0 8px;
+    }
+    
+    li a {
+        font-size: 0.9rem;
+    }
+    
+    header {
+        height: 6em;
+        margin-top: 10px;
+    }
+    
+    header h1 {
+        font-size: 1.5rem;
+        padding: 10px;
+    }
+    
+    .filtros-container {
+        flex-wrap: wrap;
+        gap: 8px;
+        padding: 0 10px;
+    }
+    
+    .filtro-btn {
+        padding: 8px 15px;
+        font-size: 0.9rem;
+    }
+    
+    #comidas-list {
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        gap: 12px;
+        width: calc(100% - 20px);
+    }
+    
+    .comida h2 {
+        font-size: 1rem;
+    }
+    
+    .comida p {
+        font-size: 0.85rem;
+    }
+    
+    .mensaje-carrito {
+        top: 70px;
+        right: 10px;
+        padding: 10px 15px;
+        max-width: 250px;
+        font-size: 0.9rem;
+    }
+    
+    .carrito-container {
+        padding: 10px;
+    }
+    
+    #carrito-vacio {
+        padding: 30px 20px;
+    }
+    
+    #carrito-vacio p {
+        font-size: 1.1rem;
+    }
+    
+    .resumen-box {
+        padding: 15px;
+    }
+    
+    .resumen-linea {
+        font-size: 0.95rem;
+    }
+    
+    .resumen-linea.total {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 600px) {
+    nav {
+        padding: 3% 0;
+    }
+    
+    ul {
+        padding: 0 10px;
+    }
+    
+    li {
+        display: block;
+        margin: 8px 0;
+    }
+    
+    header {
+        height: 5em;
+    }
+    
+    header h1 {
+        font-size: 1.3rem;
+        padding: 8px;
+    }
+    
+    .filtros-container {
+        flex-direction: column;
+        gap: 8px;
+        width: calc(100% - 20px);
+        padding: 0 10px;
+    }
+    
+    .filtro-btn {
+        width: 100%;
+        padding: 10px;
+    }
+    
+    #comidas-list {
+        grid-template-columns: 1fr;
+        gap: 15px;
+        width: calc(100% - 20px);
+        padding: 10px;
+    }
+    
+    .comida {
+        padding: 15px;
+    }
+    
+    .comida .Agregar {
+        width: 100%;
+        padding: 10px;
+    }
+    
+    .carrito-item {
+        padding: 12px;
+        gap: 10px;
+    }
+    
+    .item-info h3 {
+        font-size: 1rem;
+    }
+    
+    .item-subtotal {
+        font-size: 1rem;
+    }
+    
+    .btn-cantidad {
+        width: 35px;
+        height: 35px;
+    }
+    
+    .input-cantidad {
+        width: 70px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 14px;
+    }
+    
+    nav {
+        padding: 4% 0;
+    }
+    
+    header {
+        height: 4em;
+    }
+    
+    header h1 {
+        font-size: 1.1rem;
+        padding: 5px;
+    }
+    
+    .filtros-container {
+        margin: 10px auto;
+    }
+    
+    .filtro-btn {
+        font-size: 0.85rem;
+        padding: 8px;
+    }
+    
+    #comidas-list {
+        gap: 10px;
+        padding: 5px;
+        width: calc(100% - 10px);
+    }
+    
+    .comida {
+        padding: 10px;
+    }
+    
+    .comida h2 {
+        font-size: 0.95rem;
+    }
+    
+    .comida p {
+        font-size: 0.8rem;
+    }
+    
+    .mensaje-carrito {
+        top: 60px;
+        right: 5px;
+        padding: 8px 12px;
+        max-width: calc(100% - 20px);
+        font-size: 0.85rem;
+    }
+    
+    .carrito-container {
+        padding: 10px 5px;
+    }
+    
+    #carrito-vacio {
+        padding: 20px 10px;
+    }
+    
+    #carrito-vacio p {
+        font-size: 1rem;
+    }
+    
+    .btn-volver {
+        padding: 8px 15px;
+        font-size: 0.9rem;
+    }
+    
+    .carrito-item {
+        padding: 10px;
+    }
+    
+    .item-info h3 {
+        font-size: 0.95rem;
+    }
+    
+    .item-info p {
+        font-size: 0.8rem;
+    }
+    
+    .item-precio {
+        font-size: 0.85rem;
+    }
+    
+    .btn-cantidad {
+        width: 32px;
+        height: 32px;
+        font-size: 1rem;
+    }
+    
+    .input-cantidad {
+        width: 60px;
+        font-size: 0.9rem;
+    }
+    
+    .item-subtotal {
+        font-size: 0.9rem;
+    }
+    
+    .btn-eliminar {
+        padding: 6px 10px;
+        font-size: 0.85rem;
+        width: 100%;
+    }
+    
+    .resumen-box {
+        padding: 12px;
+    }
+    
+    .resumen-box h3 {
+        font-size: 1rem;
+    }
+    
+    .resumen-linea {
+        font-size: 0.85rem;
+        padding: 8px 0;
+    }
+    
+    .resumen-linea.total {
+        font-size: 1rem;
+    }
+    
+    .btn-finalizar, .btn-vaciar {
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+    
+    .badge-carrito {
+        padding: 1px 6px;
+        font-size: 0.7rem;
+    }
+}
+
+@media (max-width: 360px) {
+    header h1 {
+        font-size: 1rem;
+    }
+    
+    .filtro-btn {
+        font-size: 0.8rem;
+        padding: 7px;
+    }
+    
+    .comida h2 {
+        font-size: 0.9rem;
+    }
+    
+    .comida p {
+        font-size: 0.75rem;
+    }
+    
+    .comida .Agregar {
+        padding: 8px;
+        font-size: 0.85rem;
     }
 }

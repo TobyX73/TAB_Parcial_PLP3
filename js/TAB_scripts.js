@@ -197,7 +197,6 @@ window.carritoFunciones = {
     obtenerCantidadItems
 };
 
-// Funciones auxiliares
 function obtenerPrecio(nombre) {
     const precios = {
         'Hamburguesa': 8.50,
@@ -228,7 +227,7 @@ function mostrarMensaje(mensaje, tipo = 'success') {
     }, 3000);
 }
 
-// Vista del carrito (carrito.php)
+// Vista del carrito 
 if (document.getElementById('carrito-items')) {
     document.addEventListener('DOMContentLoaded', cargarVistaCarrito);
     
